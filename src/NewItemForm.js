@@ -17,7 +17,9 @@ const NewItemForm = ({addItem}) => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        addItem(formData.name, formData.qty)
+        // addItem(formData.name, formData.qty);
+        // rewrite as below to better handle multiple inputs
+        addItem({...formData})
         setFormData(initialState)
 
     }
@@ -25,7 +27,7 @@ const NewItemForm = ({addItem}) => {
     return (
         <form onSubmit={handleSubmit}>
 
-            <label htmlFor="name">Product Name</label>
+            <label htmlFor="name">Product</label>
             <input 
             id="name" 
             type="text" 
