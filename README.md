@@ -1,6 +1,8 @@
 # React Forms Notes
 
-Controlled components and more
+Controlled components, form inputs, testing forms.
+
+Note to self, remember to use Formik and Material UI for additional validators. 
 
 
 ### `npm start`
